@@ -1,7 +1,8 @@
 let input = "";
 //global variable
 
-//The loop opens here. While condition defined as true by default for the whole scope in breces.
+//The loop opens here.
+//The condition of a loop is always true, so the loop runs for infinite times (until the memory is full.
 //firstly we test variable "input"
 //and only then variable userConfirmed appears in the next step of the loop.
 while (true) {
@@ -14,6 +15,7 @@ while (true) {
   }
 
   //in this version it is a local variable declared and accessible within function.
+  //declared, initialized, assigned
   let userConfirmed = confirm(
     "do you want to spell this word?\n\n" + '- "' + input + '"'
   );
