@@ -28,6 +28,7 @@ let oneByOne = "all spelled out:\n";
 for (let i = 0; i < input.length; i = i + 1) {
   //loop for (initialization; condition; finalExpression)
   //used to check characters one by one in the scope (within variable "input")
+  //check characters until their ammoint = lenght of the input.
   let nextLetter = input[i];
   oneByOne = oneByOne + "\n- " + nextLetter;
 }
