@@ -1,8 +1,12 @@
+/* --- Program behaviour --- */
+
 // The program asks a user to input a phrase.
 // It will send requests until the user input something.
 // When there is input, the program asks if user wants to use this phrase for check up.
 // If yes, then program sends requests about each letter, and user decide whether to keep a letter or to replace it (or remove it).
 // In the end, the program shows the result with corrections made by user.
+
+/* ----- declare variables to store program data ----- */
 
 // Declare, init: this variable will keep user input
 // It will be compared with null, empty strings within a while loop.
@@ -10,6 +14,9 @@
 let input = "";
 
 //declared, init, assigned: flag variable, returns boolean. Used as condition for the loop.
+
+/* ----- gather user input ----- */
+
 let userConfirmed = false;
 /*--The following loop is related to 1)input and 2)user's decision to keep or discard it.--*/
 // While-loop start.
@@ -19,12 +26,17 @@ while (!userConfirmed) {
   input = prompt("enter a phrase, you'll get a chance to fix your mistakes");
 
   // if-statement with strict equality operators that compare user input to null and empty  strings.
+
+  /* -- did the user input nothing? -- */
+
   if (input === "" || input === null) {
     // if user does not enter anything, but press ok or cancel, there will be pop-up alert:
     alert("nope, enter something");
     // than the program will skip the rest of the code and go back to the condition of the loop.
     continue;
   }
+
+  /* --- Do user confirm input? ---*/
 
   // This line will execute only if user entered smth.
   // variable userConfirm will be assigned by user, when s/he clicks ok
@@ -59,5 +71,6 @@ for (let character of input) {
     newPhrase = newPhrase + replacement;
   }
 }
+/* --- Sending output --- */
 // Final message with new phrase to the user that includes string predetermined text, transformed user input.
 alert('here is your new phrase:\n\n"' + newPhrase + '"');
