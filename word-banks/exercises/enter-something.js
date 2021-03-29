@@ -7,24 +7,27 @@
 
 */
 
-let something = '';
+let something = "";
 
 let isNothing = true;
-while (_) {
-  let input = prompt('enter something');
+while (isNothing) {
+  // isNothing
+  let input = prompt("enter something");
 
-  if (_ === null) {
-    alert('canceler');
+  if (input === null) {
+    //input
+    alert("canceler");
     continue;
   }
 
-  if (_ === '') {
-    alert('nothing!??');
+  if (input === "") {
+    //input
+    alert("nothing!??");
     continue;
   }
 
-  _ = false;
-  _ = input;
+  isNothing = false;
+  something = input;
 }
 
 alert(something);
