@@ -1,9 +1,9 @@
 let _a = null;
-while (_a === null) {
-  _a = prompt('enter some text, the program will check if it is only vowels');
+while (_a === null || _a === "") {
+  _a = prompt("enter some text, the program will check if it is only vowels");
 }
 
-let _b = 'aeiou';
+let _b = "aeiou";
 
 let _c = true;
 for (let _d of _a) {
