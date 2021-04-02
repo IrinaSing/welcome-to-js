@@ -2,7 +2,7 @@
 firstPhraseInput, secondPhraseInput, thirdPhraseInput - varyables-holders
 assigned by user with three phrases via prompts.
 
-numberOfFraseToRecall - variable that is assigned as a result of operation
+randomNumberOfThePhraseToRecall - variable that is assigned as a result of operation
 with randomizer. User will see prompt to remember and input again 1, 2 or 3 phrase.
 
 correctAnswer - variable with correct answer will be assigned in dependance
@@ -24,22 +24,28 @@ let thirdPhraseInput = prompt("enter your third secret phrase:");
 
 alert("all saved! get ready to remember");
 
-let numberOfFraseToRecall = Math.round(Math.random() * 2) + 1;
+let randomNumberOfThePhraseToRecall = Math.round(Math.random() * 2) + 1;
 
 let correctAnswer = "";
-if (numberOfFraseToRecall === 1) {
+if (randomNumberOfThePhraseToRecall === 1) {
   correctAnswer = firstPhraseInput;
-} else if (numberOfFraseToRecall === 2) {
+} else if (randomNumberOfThePhraseToRecall === 2) {
   correctAnswer = secondPhraseInput;
-} else if (numberOfFraseToRecall === 3) {
+} else if (randomNumberOfThePhraseToRecall === 3) {
   correctAnswer = thirdPhraseInput;
 }
 
-let guessInput = prompt("enter phrase number " + numberOfFraseToRecall);
+let guessInput = prompt(
+  "enter phrase number " + randomNumberOfThePhraseToRecall
+);
 
 if (guessInput === correctAnswer) {
   alert(
-    "correct! phrase " + numberOfFraseToRecall + ' was "' + correctAnswer + '"'
+    "correct! phrase " +
+      randomNumberOfThePhraseToRecall +
+      ' was "' +
+      correctAnswer +
+      '"'
   );
 } else {
   alert("nope :(");
