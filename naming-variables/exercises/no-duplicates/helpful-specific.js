@@ -2,14 +2,14 @@
 
 userInputToCheckForDuplicates - variable that will store user input that will be checked for duplicates.
 
-resultOfDuplicateCheckUp - variable that will store all the characters
+resultOfDuplicateCheckUp - variable that will assign and store all the characters
 out of user input that were collected before the program came across the duplicate.
 it's lenghth will be compared to lenght of original input.
 
 characterToCheck - variable that determines that every character of user 
 input will be checked one by one until there is a duplicate.
 
-charIsDuplicated - flag variable that returns fals until program will not come across duplicated caracter.
+charIsDuplicated - flag variable that returns false until program will not come across duplicated caracter.
 When it returns true, the program breaks the checking process.
 
 */
