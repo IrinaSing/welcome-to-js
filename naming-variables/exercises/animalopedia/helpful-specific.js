@@ -18,7 +18,7 @@ alert(
 );
 
 let animal = null;
-while (animal === null) {
+while (animal === null || animal === "") {
   animal = prompt("enter an animal");
 }
 
