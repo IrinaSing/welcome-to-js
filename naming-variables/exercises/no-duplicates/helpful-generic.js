@@ -21,8 +21,8 @@ while (input === null) {
 
 let resultOfCheckUp = "";
 for (let character of input) {
-  let charIsDuplicated = resultOfCheckUp.includes(character);
-  if (charIsDuplicated) {
+  let charIsNotAcceptable = resultOfCheckUp.includes(character);
+  if (charIsNotAcceptable) {
     break;
   }
   resultOfCheckUp = resultOfCheckUp + character;
