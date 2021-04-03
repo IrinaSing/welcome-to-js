@@ -5,7 +5,7 @@ vowels - variable with fixed value that stores list of vowels for further compar
 
 vowelsFound - flag variable that has value false if there is no vowels in the input.
 True - if there are vowels in the input. When the first vowel found, it will cause the program break.
-This log of this variabe will be displayed in the final alert representing the results of check up.
+The log of this variabe will be displayed in the final alert representing the results of check up.
 
 char - variable that means checking every character of user input (until it will come across the vowel)
 
